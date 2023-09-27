@@ -1,4 +1,5 @@
 package Java.ConditionAndBoolean;
+import java.util.Scanner;
 
 public class Main {
 
@@ -18,16 +19,18 @@ public class Main {
     boolean h = x==y||x!=y;
     
     String Name = "Ashiq";
-    String name = " Alim";
+    String name = "Ashiq";
     
     //these comparison can be done with String
     
-    boolean i = Name==name;
+    Scanner sc = new Scanner(System.in);
+    String input = sc.next();
+    boolean i = Name.equals(input);
     boolean j = !Name.equals(name);
     
-    System.out.println(a+","+b+","+c+","+d+","+e+","+f+","+g+","+h+","+i+","+j);
+    System.out.println(a+","+b+","+c+","+d+","+e+","+f+","+g+","+h+",i ="+i+","+j);
     
-    Mobile tecno =new Mobile("Tecno Spark 8",32);
+    Mobile tecno = new Mobile("Tecno Spark 8",32);
     Mobile redmi = new Mobile("Redmi 5A",16);
     
     System.out.println("Checking if two object is equal or not ="+tecno.equals(redmi));
